@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgba(51, 50, 50, 0.729);
+}
+html, body{
+    background-image: linear-gradient(to bottom right, #3840d8b2, #647AA3);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.cont{
+    background-image: linear-gradient(to bottom right, #95B2B0, #C6EBBE);
+    border-radius: 20px;
+    height: 70vh;
+    width: 55vw;
+}
+
+.search form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+.search-box{
+    width: 50%;
+    height: 7vh;
+    border: none;
+    padding: 2px 10%;
+    outline: none;
+    border-radius: 10px 0px 0px 10px;
+    background-color: aliceblue;
+}
+.search-btn{
+    width: 20%;
+    height: 7vh;
+    outline: none;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #C6EBBE;
+    font-size: 1.2vmax;
+    font-family: 'Roboto', sans-serif
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid cont">
+        <div class="search">
+          <form method="post" action="/result">
+            <input type="text" name="city" placeholder="Enter City Name" class="search-box">
+            <button type="submit" class="search-btn">Submit</button>
+          </form>
+          </div>
+        </div>
+</body>
+</html>
